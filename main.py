@@ -9,6 +9,10 @@ def subtract(x, y):
     """Function to subtract two numbers"""
     return x - y
 
+def multiply(x, y):
+    """Function to subtract two numbers"""
+    return x * y
+
 
 
 print("Select operation:")
@@ -18,7 +22,7 @@ print("2. Subtract")
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract ): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3 - Multiply): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -36,6 +40,15 @@ while True:
 
         if choice == '2':
             print("Result:", subtract(num1, num2))
+
+        break
+
+    if choice in ('3'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '3':
+            print("Result:", multiply(num1, num2))
 
         break
 
