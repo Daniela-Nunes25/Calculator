@@ -21,6 +21,10 @@ def modulo(x, y):
     """Function of the modulo of two numbers"""
     return x % y
 
+def power(x, y):
+    """Function of the power of two numbers"""
+    return math.pow(x,y)
+
 
 
 print("Select operation:")
@@ -29,11 +33,12 @@ print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
 print("5. Modulo")
+print("6. Power")
 
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -81,6 +86,15 @@ while True:
 
         break
 
+    if choice in ('6'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '6':
+            print("Result:", power(num1, num2))
+
+        break
+
 
     else:
-        print("Invalid input. Please enter a valid number (1/2/3/4).")
+        print("Invalid input. Please enter a valid number (1/2/3/4/5/6).")
