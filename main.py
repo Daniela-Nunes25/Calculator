@@ -29,6 +29,10 @@ def factorial(x):
     """Function of the factorial of a number"""
     return math.gamma(x)
 
+def squareRoot(x):
+    """Function of the square root of a number"""
+    return math.sqrt(x)
+
 
 print("Select operation:")
 print("1. Add")
@@ -38,11 +42,12 @@ print("4. Divide")
 print("5. Modulo")
 print("6. Power")
 print("7. Factorial")
+print("8. Square root")
 
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power 7- Factorial): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power 7- Factorial 8- Square root): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -104,6 +109,14 @@ while True:
 
         if choice == '7':
             print("Result:", factorial(num1))
+
+        break
+
+    if choice in ('8'):
+        num1 = float(input("Enter number: "))
+
+        if choice == '8':
+            print("Result:", squareRoot(num1))
 
         break
 
