@@ -33,6 +33,10 @@ def squareRoot(x):
     """Function of the square root of a number"""
     return math.sqrt(x)
 
+def inverse(x):
+    """Function of the inverse of a number"""
+    return 1 / x
+
 
 print("Select operation:")
 print("1. Add")
@@ -43,11 +47,12 @@ print("5. Modulo")
 print("6. Power")
 print("7. Factorial")
 print("8. Square root")
+print("9. Inverse")
 
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power 7- Factorial 8- Square root): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power 7- Factorial 8- Square root 9- Inverse): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -120,6 +125,14 @@ while True:
 
         break
 
+    if choice in ('9'):
+        num1 = float(input("Enter number: "))
+
+        if choice == '9':
+            print("Result:", inverse(num1))
+
+        break
+
 
     else:
-        print("Invalid input. Please enter a valid number (1/2/3/4/5/6).")
+        print("Invalid input. Please enter a valid number (1/2/3/4/5/6/7/8/9).")
