@@ -17,6 +17,10 @@ def divide(x, y):
     """Function to divide two numbers"""
     return x / y
 
+def modulo(x, y):
+    """Function of the modulo of two numbers"""
+    return x % y
+
 
 
 print("Select operation:")
@@ -24,11 +28,12 @@ print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+print("5. Modulo")
 
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -64,6 +69,15 @@ while True:
 
         if choice == '4':
             print("Result:", divide(num1, num2))
+
+        break
+
+    if choice in ('5'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '5':
+            print("Result:", modulo(num1, num2))
 
         break
 
