@@ -25,6 +25,9 @@ def power(x, y):
     """Function of the power of two numbers"""
     return math.pow(x,y)
 
+def factorial(x):
+    """Function of the factorial of a number"""
+    return math.gamma(x)
 
 
 print("Select operation:")
@@ -34,11 +37,12 @@ print("3. Multiply")
 print("4. Divide")
 print("5. Modulo")
 print("6. Power")
+print("7. Factorial")
 
 
 
 while True:
-    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power): ")
+    choice = input("Enter choice (1- Add 2- Subtract 3- Multiply 4- Divide 5- Modulo 6- Power 7- Factorial): ")
 
     if choice in ('1'):
         num1 = float(input("Enter first number: "))
@@ -92,6 +96,14 @@ while True:
 
         if choice == '6':
             print("Result:", power(num1, num2))
+
+        break
+
+    if choice in ('7'):
+        num1 = float(input("Enter number: "))
+
+        if choice == '7':
+            print("Result:", factorial(num1))
 
         break
 
